@@ -8,9 +8,10 @@ namespace VTM_Client_FOS21
 {
     internal interface IModel
     {
-        string data { get; set; }
-        void reader();
-        void writer();
+        Iview view{ get; set; }
+        Icontroller controller { get; set; }
+        void SensorenLessen();
+        void ausgangeSetzen(); 
         
     }
 }
